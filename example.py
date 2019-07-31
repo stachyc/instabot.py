@@ -25,7 +25,8 @@ bot = InstaBot(
     # session_file=False, # Set to False to disable persistent session, or specify custom session_file (ie ='myusername.session')
     user_min_follow=0,
     log_mod=0,
-    proxy="",
+    https_proxy="",
+    http_proxy="",
     # List of list of words, each of which will be used to generate comment
     # For example: "This shot feels wow!"
     comment_list=[
