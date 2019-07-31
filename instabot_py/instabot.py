@@ -145,7 +145,7 @@ class InstaBot:
         # if you need proxy make something like this:
         # self.s.proxies = {"https" : "http://proxyip:proxyport"}
         # by @ageorgios
-        if config.get("http_proxy") and config.get("https_proxy"):
+        if config.get("http_proxy") or config.get("https_proxy"):
             proxies = {
                 "http": f"http://{config.get('http_proxy')}",
                 "https": f"http://{config.get('https_proxy')}",
